@@ -1,7 +1,7 @@
 # max_lift()
 An algorithm in R for Evans Day weight lifting app.
 
-This function returns the maximum amount of weight to lift for one's upper body, lower body and general exercise repetitions for a specified weight lifting goal. The weight argument is the amount of weight an individual may lift between 4 to 6 repetitions. That input is passed through the **weight** argument. The additional arguments are **mass** and **goal**.  The function outputs a dataframe with the integer weight features `upper_body` and `lower_body` as well as character objects for repetitions as feature `reps`.
+This function returns the maximum amount of weight to lift for one's upper body, lower body and general exercise repetitions for a specified weight lifting goal. The weight argument is the amount of weight an individual may lift between 4 to 6 repetitions. That input is passed through the **weight** argument. The additional arguments are **mass** and **goal**.  The function outputs a dataframe with the integer features `upper_body` and `lower_body` as well as character objects for repetitions as feature `reps`.
 
 The **mass** argument has two charcter objects (string values) from which to choose:
 
