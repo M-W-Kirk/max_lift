@@ -8,15 +8,14 @@
 max_lift <- function(weight, mass = "lb", goal = "max") {
 
 #---MASS METRIC CONTROL FLOW---------------------
-    if(mass == "kg") {
-    upper_body <- (weight * 1.1307) + 0.6998
-    lower_body <- (weight * 1.09703) + 14.2546
-    reps <- "1"
-  } else if(mass == "lb"){
-    upper_body <- (weight * 1.15)
-    lower_body <- (weight * 1.2)
-    reps <- "1"
-  }
+  ifelse(mass == "lb",
+        c(upper_body <- weight * 1.15,
+          lower_body <- weight * 1.2,
+          reps <- "1"),
+        c(upper_body <- (weight * 1.1307) + 0.6998,
+          lower_body <- (weight * 1.09703) + 14.2546,
+          reps <- "1")
+         )
   
 #---GOAL CONTROL FLOW----------------------------  
   if(goal == "max") {
